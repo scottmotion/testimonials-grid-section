@@ -102,6 +102,7 @@ p {
 .testimonial__avatar {
     height: 30px;
     width: 30px;
+    border-radius: 50%;
 }
 .testimonial__user {
     display: flex;
@@ -109,6 +110,20 @@ p {
     justify-content: space-between;
     align-items: flex-start;
     /* gap: 1rem; */
+}
+
+.testimonial__user-status {
+    opacity: 50%;
+    font-size: 11px;
+}
+
+.testimonial__title {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.testimonial__quote {
+    opacity: 70%;
 }
 
 /* FOOTER */
