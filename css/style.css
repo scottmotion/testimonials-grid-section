@@ -17,7 +17,6 @@
 
     /* "Verified Graduate" has the same color as the person's name with 50% opacity.
     Review paragraphs inside the quotations have the same color as well, but are at 70% opacity. */
-
 }
 
 /* * {
@@ -36,19 +35,96 @@ body {
     font-weight: 500;
 }
 
-/* .main {
+p {
+    margin: 0;
+}
+
+.main {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    min-width: 375px;
+    /* min-width: 375px; */
     width: 100%;
     min-height: 768px;
     box-sizing: border-box;
-    padding: 1.5rem;
+    /* padding: 1.5rem; */
+}
+
+/* .grid-span-col-2 {
+    grid-column: span 2;
 } */
 
+/* .grid-span-row-2 {
+    grid-row: span 2;
+} */
+
+.testimonial-grid {
+    display: grid;
+    gap: 1.5rem;
+    padding-block: 2rem;
+    width: min(95%, 70rem);
+    margin-inline: auto;
+}
+
+.testimonial {
+    padding: 2rem;
+    border-radius: 0.5rem;
+    border: 1px solid black;
+}
+
+.testimonial--violet {
+    background-color: var(--moderateViolet);
+    color: var(--white);
+}
+.testimonial--dark-gray-blue {
+    background-color: var(--veryDarkGrayishBlue);
+    color: var(--white);
+}
+.testimonial--dark-black-blue {
+    background-color: var(--veryDarkBlackishBlue);
+    color: var(--white);
+}
+
+
+.testimonial__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.testimonial__user-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.testimonial__avatar {
+    height: 30px;
+    width: 30px;
+}
+.testimonial__user {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* gap: 1rem; */
+}
 
 /* FOOTER */
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
+@media (min-width: 50em) {
+    .testimonial-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .testimonial:last-child {
+        grid-column-start: 4;
+        grid-row: 1 / span 2;
+    }
+    .testimonial--span-col-2 {
+        grid-column: span 2;
+    }
+    
+}
