@@ -48,7 +48,7 @@ p {
     align-items: center;
     /* min-width: 375px; */
     width: 100%;
-    min-height: 768px;
+    min-height: 900px;
     box-sizing: border-box;
     /* padding: 1.5rem; */
 }
@@ -70,6 +70,7 @@ p {
 }
 
 .testimonial {
+    display: flex;
     padding: 2.5em;
     border-radius: 0.5rem;
     /* border: 1px solid black; */
@@ -90,13 +91,14 @@ p {
 }
 .testimonial--white {
     background-color: var(--white);
-    color: var(--veryDarkBlackishBlue);
+    color: var(--veryDarkGrayishBlue);
 }
 
 
 .testimonial__wrapper {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 1rem;
 }
 
