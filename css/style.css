@@ -19,17 +19,7 @@
     Review paragraphs inside the quotations have the same color as well, but are at 70% opacity. */
 }
 
-/* * {
-    margin: 0;
-} */
-
 body {
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: unset; */
-    /* background: linear-gradient(0deg, var(--softBlue) 0%, var(--softViolet) 100%) repeat-x var(--softBlue); */
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-size: 13px;
     font-weight: 500;
@@ -73,7 +63,6 @@ p {
     display: flex;
     padding: 2.5em;
     border-radius: 0.5rem;
-    /* border: 1px solid black; */
     box-shadow: 2.5rem 3.75rem 3rem -3rem rgba(0, 0, 0, 0.2);
 }
 
@@ -94,6 +83,11 @@ p {
     color: var(--veryDarkGrayishBlue);
 }
 
+.testimonial:first-child {
+    background-image: url(/images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: right 1.5rem top;
+}
 
 .testimonial__wrapper {
     display: flex;
@@ -118,7 +112,6 @@ p {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    /* gap: 1rem; */
 }
 
 .testimonial__user-status {
@@ -139,9 +132,30 @@ p {
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
-@media (min-width: 50em) {
+@media (min-width: 40em) {
+    .testimonial-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .testimonial:first-child {
+        background-position: right 6rem top;
+    }
+    .testimonial:last-child {
+        grid-column: span 3;
+        /* grid-column-start: 4; */
+        /* grid-row: 1 / span 2; */
+    }
+    .testimonial--span-col-2 {
+        grid-column: span 2;
+    }  
+}
+
+
+@media (min-width: 60em) {
     .testimonial-grid {
         grid-template-columns: repeat(4, 1fr);
+    }
+    .testimonial:first-child {
+        background-position: right 6rem top;
     }
     .testimonial:last-child {
         grid-column-start: 4;
@@ -149,6 +163,5 @@ p {
     }
     .testimonial--span-col-2 {
         grid-column: span 2;
-    }
-    
+    }  
 }
