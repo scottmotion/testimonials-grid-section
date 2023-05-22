@@ -137,7 +137,7 @@ p {
         grid-template-columns: repeat(3, 1fr);
     }
     .testimonial:first-child {
-        background-position: right 6rem top;
+        background-position: right 3rem top;
     }
     .testimonial:last-child {
         grid-column: span 3;
