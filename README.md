@@ -7,13 +7,11 @@ This is a solution to the [Testimonials grid section challenge on Frontend Mento
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
-  - [Links](#links)
+  <!-- - [Links](#links) -->
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
 - [Author](#author)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -27,7 +25,7 @@ Users should be able to:
 
 ![](./screenshot.png)
 
-### Links
+<!-- ### Links -->
 
 <!-- - Solution URL: [Add solution URL here](https://your-solution-url.com) -->
 <!-- - Live Site URL: [Add live site URL here](https://your-live-site-url.com) -->
@@ -44,27 +42,7 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+I began this project using Flexbox, however after some difficulty I switch to using a Grid layout with each card being a Flexbox element. While CSS Grid has many options I limited my code to only the necessary properties and adding to my classes via media queries. I also expanded on the original prompt by adding a tablet layout!
 
 ## Author
 
