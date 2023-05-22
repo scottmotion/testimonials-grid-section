@@ -33,6 +33,8 @@ body {
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-size: 13px;
     font-weight: 500;
+    background-color: var(--lightGrayishBlue);
+
 }
 
 p {
@@ -70,7 +72,8 @@ p {
 .testimonial {
     padding: 2.5em;
     border-radius: 0.5rem;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    box-shadow: 2.5rem 3.75rem 3rem -3rem rgba(0, 0, 0, 0.2);
 }
 
 .testimonial--violet {
@@ -84,6 +87,10 @@ p {
 .testimonial--dark-black-blue {
     background-color: var(--veryDarkBlackishBlue);
     color: var(--white);
+}
+.testimonial--white {
+    background-color: var(--white);
+    color: var(--veryDarkBlackishBlue);
 }
 
 
