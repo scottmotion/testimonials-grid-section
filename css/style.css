@@ -85,7 +85,7 @@ p {
 
 .testimonial:first-child {
     /* background-image: url(/images/bg-pattern-quotation.svg); */
-    background-image: url(https://scottmotion.github.io/testimonials-grid-section/images);
+    background-image: url(https://scottmotion.github.io/testimonials-grid-section/images/bg-pattern-quotation.svg);
     background-repeat: no-repeat;
     background-position: right 1.5rem top;
 }
